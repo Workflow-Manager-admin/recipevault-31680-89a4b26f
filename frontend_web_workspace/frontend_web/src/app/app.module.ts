@@ -11,17 +11,16 @@ import { RecipeFormComponent } from './recipe-form/recipe-form.component';
 import { routes } from './app.routes';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RecipeListComponent,
-    RecipeDetailComponent,
-    RecipeFormComponent
-  ],
+  declarations: [],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    AppComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeFormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

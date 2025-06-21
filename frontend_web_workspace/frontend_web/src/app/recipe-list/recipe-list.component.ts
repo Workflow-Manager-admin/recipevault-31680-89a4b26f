@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 import { RecipeService } from '../services/recipe.service';
 import { Recipe } from '../models/recipe.model';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-list',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './recipe-list.component.html',
   styleUrls: ['./recipe-list.component.css']
 })
-export class RecipeListComponent implements OnInit {
+export class RecipeListComponent {
   recipes: Recipe[] = [];
   searchText: string = '';
   loading: boolean = false;
@@ -22,11 +26,11 @@ export class RecipeListComponent implements OnInit {
   fetchRecipes(): void {
     this.loading = true;
     this.recipeService.getRecipes(this.searchText).subscribe({
-      next: recipes => {
+      next: (recipes) => {
         this.recipes = recipes;
         this.loading = false;
-      }, 
-      error: _ => { this.loading = false; }
+      },
+      error: () => { this.loading = false; }
     });
   }
 
@@ -34,11 +38,11 @@ export class RecipeListComponent implements OnInit {
     this.fetchRecipes();
   }
 
-  viewRecipe(id: number) {
+  viewRecipe(id: number): void {
     this.router.navigate(['/recipes', id]);
   }
 
-  addRecipe() {
+  addRecipe(): void {
     this.router.navigate(['/recipes/new']);
   }
 }

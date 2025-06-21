@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RecipeService } from '../services/recipe.service';
 import { Recipe, RecipeCreate, RecipeUpdate } from '../models/recipe.model';
 
 @Component({
   selector: 'app-recipe-form',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
   templateUrl: './recipe-form.component.html',
   styleUrls: ['./recipe-form.component.css']
 })
-export class RecipeFormComponent implements OnInit {
+export class RecipeFormComponent {
   isEdit = false;
   recipeId?: number;
   form: RecipeCreate = {
@@ -18,7 +22,6 @@ export class RecipeFormComponent implements OnInit {
     instructions: '',
     tags: []
   };
-
   loading = false;
   errorMsg = '';
 
@@ -26,9 +29,12 @@ export class RecipeFormComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private recipeService: RecipeService
-  ) {}
+  ) {
+    this.initializeComponent();
+  }
 
-  ngOnInit() {
+  // Used because lifecycle hooks are not called on standalone components unless explicitly managed.
+  initializeComponent(): void {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
       this.isEdit = true;
@@ -45,22 +51,30 @@ export class RecipeFormComponent implements OnInit {
           };
           this.loading = false;
         },
-        error: _ => { this.errorMsg = 'Recipe not found'; this.loading = false; }
+        error: () => { this.errorMsg = 'Recipe not found'; this.loading = false; }
       });
     }
   }
 
-  addIngredientField() {
+  addIngredientField(): void {
     this.form.ingredients.push('');
   }
 
-  removeIngredientField(i: number) {
+  removeIngredientField(i: number): void {
     if (this.form.ingredients.length > 1) {
       this.form.ingredients.splice(i, 1);
     }
   }
 
-  submit() {
+  updateTagsFromString(tagsString: string): void {
+    this.form.tags = tagsString.split(',').map(t => t.trim()).filter(Boolean);
+  }
+
+  tagsToString(): string {
+    return this.form.tags?.join(', ') || '';
+  }
+
+  submit(): void {
     if (this.loading) return;
     this.loading = true;
     if (this.isEdit && this.recipeId) {
@@ -69,16 +83,16 @@ export class RecipeFormComponent implements OnInit {
         ingredients: this.form.ingredients
       };
       this.recipeService.updateRecipe(this.recipeId, update).subscribe({
-        next: _ => this.router.navigate(['/recipes', this.recipeId]),
-        error: _ => {
+        next: () => this.router.navigate(['/recipes', this.recipeId]),
+        error: () => {
           this.errorMsg = 'Failed to update recipe';
           this.loading = false;
         }
       });
     } else {
       this.recipeService.addRecipe(this.form).subscribe({
-        next: r => this.router.navigate(['/recipes', r.id]),
-        error: _ => {
+        next: (r) => this.router.navigate(['/recipes', r.id]),
+        error: () => {
           this.errorMsg = 'Failed to add recipe';
           this.loading = false;
         }
@@ -86,7 +100,7 @@ export class RecipeFormComponent implements OnInit {
     }
   }
 
-  cancel() {
+  cancel(): void {
     if (this.isEdit && this.recipeId) {
       this.router.navigate(['/recipes', this.recipeId]);
     } else {
