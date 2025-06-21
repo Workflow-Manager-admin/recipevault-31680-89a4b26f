@@ -1,0 +1,21 @@
+<div *ngIf="recipe; else loadingRef">
+  <h2>
+    {{ recipe.title }}
+    <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+  </h2>
+  <p>{{ recipe.description }}</p>
+  <h4>Ingredients</h4>
+  <ul>
+    <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+  </ul>
+  <h4>Instructions</h4>
+  <pre>{{ recipe.instructions }}</pre>
+  <div class="actions">
+    <button (click)="editRecipe()">Edit</button>
+    <button (click)="deleteRecipe()">Delete</button>
+    <button (click)="backToList()">Back</button>
+  </div>
+</div>
+<ng-template #loadingRef>
+  <div>Loading...</div>
+</ng-template>

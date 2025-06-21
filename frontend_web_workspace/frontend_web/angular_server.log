@@ -1,0 +1,2188 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.166 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.595 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.370 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.139 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.121 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.125 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.373 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:1:6:
+      1 │ <div *ngIf="recipe; else loadingRef">
+        ╵       ~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:4:11:
+      4 │     <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+        ╵            ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:9:9:
+      9 │     <li *ngFor="let ing of recipe.ingredients">{{ ing }}</li>
+        ╵          ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:14:12:
+      14 │       <div *ngFor="let ing of form.ingredients; let i = index">
+         ╵             ~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:24:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                         ~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:10:8:
+      10 │   <div *ngIf="loading">Loading...</div>
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:11:8:
+      11 │   <div *ngIf="!loading && recipes.length === 0">No recipes found.<...
+         ╵         ~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:13:10:
+      13 │     <div *ngFor="let recipe of recipes" class="recipe-card" (click...
+         ╵           ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:17:15:
+      17 │         <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }...
+         ╵                ~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component AppComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     AppComponent,
+         ╵     ~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component RecipeListComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     RecipeListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component RecipeDetailComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:17:4:
+      17 │     RecipeDetailComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS-996008: Component RecipeFormComponent is standalone, and cannot be declared in an NgModule. Did you mean to import it instead? [plugin angular-compiler]
+
+    src/app/app.module.ts:18:4:
+      18 │     RecipeFormComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:3:14:
+      3 │     {{ recipe.title }}
+        ╵               ~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:6:15:
+      6 │   <p>{{ recipe.description }}</p>
+        ╵                ~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG2: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/recipe-detail/recipe-detail.component.html:12:17:
+      12 │   <pre>{{ recipe.instructions }}</pre>
+         ╵                  ~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeDetailComponent.
+
+    src/app/recipe-detail/recipe-detail.component.ts:8:15:
+      8 │   templateUrl: './recipe-detail.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:6:13:
+      6 │       <input [(ngModel)]="form.title" name="title" required />
+        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:10:16:
+      10 │       <textarea [(ngModel)]="form.description" name="description">...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:15:15:
+      15 │         <input [(ngModel)]="form.ingredients[i]" name="ingredient{...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'textarea'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:22:16:
+      22 │       <textarea [(ngModel)]="form.instructions" name="instructions...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:13:
+      26 │       <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG0: Type 'Event' is missing the following properties from type 'string[]': length, pop, push, concat, and 29 more. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:66:
+      26 │ ...lChange)="form.tags = ($event as string).split(',').map(t => t....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:144:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:26:155:
+      26 │ ...=> t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+         ╵                                             ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:40:
+      29 │ ...n type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add'...
+         ╵                                ~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:29:49:
+      29 │ ...ubmit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:30:37:
+      30 │       <button type="button" (click)="cancel()">Cancel</button>
+         ╵                                      ~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:23:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                        ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Missing expected ) at column 21 in [form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)] in /home/kavia/workspace/code-generation/recipevault-31680-89a4b26f/frontend_web_workspace/frontend_web/src/app/recipe-form/recipe-form.component.html@25:66 [plugin angular-compiler]
+
+    src/app/recipe-form/recipe-form.component.html:32:40:
+      32 │     <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+         ╵                                         ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeFormComponent.
+
+    src/app/recipe-form/recipe-form.component.ts:8:15:
+      8 │   templateUrl: './recipe-form.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/recipe-list/recipe-list.component.html:7:11:
+      7 │     <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+        ╵            ~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component RecipeListComponent.
+
+    src/app/recipe-list/recipe-list.component.ts:8:15:
+      8 │   templateUrl: './recipe-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+

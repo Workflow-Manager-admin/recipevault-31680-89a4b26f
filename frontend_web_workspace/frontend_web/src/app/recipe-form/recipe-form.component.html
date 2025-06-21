@@ -1,0 +1,34 @@
+<div class="recipe-form-container">
+  <h2>{{ isEdit ? 'Edit Recipe' : 'Add Recipe' }}</h2>
+  <form (ngSubmit)="submit()">
+    <div>
+      <label>Title</label><br />
+      <input [(ngModel)]="form.title" name="title" required />
+    </div>
+    <div>
+      <label>Description</label><br />
+      <textarea [(ngModel)]="form.description" name="description"></textarea>
+    </div>
+    <div>
+      <label>Ingredients</label><br />
+      <div *ngFor="let ing of form.ingredients; let i = index">
+        <input [(ngModel)]="form.ingredients[i]" name="ingredient{{i}}" required />
+        <button type="button" (click)="removeIngredientField(i)">Remove</button>
+      </div>
+      <button type="button" (click)="addIngredientField()">Add Ingredient</button>
+    </div>
+    <div>
+      <label>Instructions</label><br />
+      <textarea [(ngModel)]="form.instructions" name="instructions" required></textarea>
+    </div>
+    <div>
+      <label>Tags (comma-separated)</label><br />
+      <input [(ngModel)]="form.tags" name="tags" (ngModelChange)="form.tags = ($event as string).split(',').map(t => t.trim()).filter(Boolean)" [ngModel]="form.tags?.join(', ')" />
+    </div>
+    <div class="actions">
+      <button type="submit" [disabled]="loading">{{ isEdit ? 'Save' : 'Add' }}</button>
+      <button type="button" (click)="cancel()">Cancel</button>
+    </div>
+    <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+  </form>
+</div>

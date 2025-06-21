@@ -1,0 +1,21 @@
+<div class="recipe-list-container">
+  <div class="header row">
+    <h2>Recipes</h2>
+    <button (click)="addRecipe()">Add New Recipe</button>
+  </div>
+  <div class="search-bar">
+    <input [(ngModel)]="searchText" placeholder="Search recipes..." />
+    <button (click)="onSearch()">Search</button>
+  </div>
+  <div *ngIf="loading">Loading...</div>
+  <div *ngIf="!loading && recipes.length === 0">No recipes found.</div>
+  <div class="recipe-list">
+    <div *ngFor="let recipe of recipes" class="recipe-card" (click)="viewRecipe(recipe.id)">
+      <h3>{{ recipe.title }}</h3>
+      <p>{{ recipe.description }}</p>
+      <div class="tag-list">
+        <span *ngFor="let tag of recipe.tags" class="tag">{{ tag }}</span>
+      </div>
+    </div>
+  </div>
+</div>
